@@ -247,7 +247,7 @@ cdef class NormalFloatHyperparameter(FloatHyperparameter):
             scalar = np.round(scalar / self.q) * self.q
         return scalar
 
-    def _inverse_transform(self, vector: Optional[np.ndarray]) -> Union[float, np.ndarray]:
+    def _inverse_transform(self, vector: Optional[Union[float, np.ndarray]]) -> Union[float, np.ndarray]:
         if vector is None:
             return np.NaN
 
