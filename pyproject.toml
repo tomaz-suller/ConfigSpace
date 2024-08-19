@@ -58,7 +58,7 @@ urls.homepage = "https://github.com/automl/ConfigSpace"
 urls.documentation = "https://automl.github.io/ConfigSpace/main/"
 
 dependencies = [
-  "numpy",
+  "numpy==1.26.4",
   "pyparsing",
   "scipy",
   "typing_extensions",
